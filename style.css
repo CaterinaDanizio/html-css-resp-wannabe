@@ -72,10 +72,8 @@ img {
   clear: both;
 }
 
-/* Esercizio mediaquery */
+/* Esercizio mediaquery < 420px */
 @media screen and (max-width:420px) {
-
-
   /* debug
   body {background-color: yellow; */
 
@@ -118,4 +116,35 @@ height: auto;
     padding: 15px;
     width: 80px;
 }
+}
 /* Bonus */
+
+@media screen and (min-width: 421px) and (max-width: 820px) {
+  /* debug
+  body {background: green; */
+
+  .row {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+  }
+
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+img {
+  height: 100px;
+  width: auto;
+}
+  }
